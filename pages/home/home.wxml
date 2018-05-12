@@ -1,0 +1,42 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view class='search-restaurant'>
+    <image src='../../assets/icon/search.svg' style='width: 50rpx;height: 50rpx;'></image>
+    <input type='text' confirm-type='search' placeholder="搜索小红书的笔记" placeholder-class="input-placeholder" style='font-size: 24rpx;' />
+  </view>
+  <view>
+    <scroll-view scroll-x="true" style='width:90%; margin: auto;'>
+      <view class='item-scroll'>
+        <view wx:for="{{tabs}}" wx:for-item="tab" data-city='{{tab}}' catchtap='itemSelect' class='item-tabs'>
+          {{tab}}
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='all' style=' column-count:2;column-gap: 0'>
+    <view class='item-datas' wx:for="{{datas.data}}">
+      <view class='item-list'>
+        <view>
+          <image src='{{item.imgUrl}}' class='list-image' style='height: {{item.imageHeight}}rpx;'></image>
+        </view>
+        <view class='item-direction'>
+          <text>{{item.dirsction}}</text>
+        </view>
+        <view class='item-foot'>
+          <view class='item-name'>
+            <text>{{item.name}}</text>
+          </view>
+          <view class='item-num'>
+            <view >
+              <image src='{{imgSrc}}' style='width:34rpx;height: 34rpx; margin-bottom: -8rpx'></image>
+            </view>
+            <view>
+              <text>{{item.number}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

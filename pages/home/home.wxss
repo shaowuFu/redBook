@@ -1,0 +1,116 @@
+/* pages/home/home.wxss */
+
+.search-restaurant {
+  border: 1px solid blue;
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  display: flex;
+}
+
+.input-placeholder {
+  font-size: 24rpx;
+}
+
+.item-tabs {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.item-scroll {
+  display: flex;
+  width: 352%;
+}
+
+.item-left {
+  border: 1px solid blue;
+  margin: 10rpx;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20rpx 
+}
+
+.item-right {
+  border: 1px solid blue;
+  margin: 10rpx;
+  flex: 1;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-all {
+  margin: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-image {
+  /* max-height: 330rpx; */
+  width: 330rpx;
+}
+
+.item-direction {
+  margin-left: 12rpx;
+}
+
+.item-name {
+  flex: 1;
+  margin-left: 12rpx;
+}
+
+.item-num {
+  flex: 1;
+  position: absolute;
+  margin-left: 120px;
+  display: flex;
+}
+
+text {
+  font-size: 20rpx;
+}
+
+.item-foot {
+  display: flex;
+  margin: 5rpx;
+  /* position: relative; */
+}
+
+.left {
+  display: flex;
+  width: 45%;
+  flex-wrap: wrap;
+  margin: 10rpx;
+}
+.right {
+  display: flex;
+  width: 45%;
+  flex-wrap: wrap;
+  margin: 10rpx;
+}
+
+.all {
+  margin: 10rpx;
+}
+
+.item-data {
+  float: left;
+  
+}
+.item-list {
+  box-shadow: 0 0 20rpx;
+  margin-left: 20rpx;
+}
+
+.list-image {
+  width: 340rpx;
+}
+
+.item-datas {
+  box-sizing: border-box;
+  break-inside:avoid;
+  margin-bottom: 20rpx;
+}
