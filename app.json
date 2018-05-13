@@ -3,7 +3,7 @@
     "pages/home/home",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/order/order",
+    "pages/my/my",
     "pages/menu/menu"
   ],
   "window": {
@@ -27,7 +27,7 @@
         "selectedIconPath": "./assets/icon/noStore.png"
       },
       {
-        "pagePath": "pages/order/order",
+        "pagePath": "pages/my/my",
         "text": "我的",
         "iconPath": "./assets/icon/noMy.png",
         "selectedIconPath": "./assets/icon/my.png"

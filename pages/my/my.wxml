@@ -1,0 +1,26 @@
+<!--pages/order/order.wxml-->
+<view class='my-all'>
+  <view class='image'>
+    <image src='{{userInfo.avatarUrl}}' class='user-image'></image>
+  </view>
+  <view style='text-align:center'>
+    <text>{{userInfo.nickName}}</text>
+  </view>
+  <view>
+    <view class='item' catchtap='goCollection'>
+      <image src='../../assets/icon/myCollection.svg' class='item-image-card'></image>
+      <text class='item-text-title'>我的收藏</text>
+      <text class='item-text-direction' decode="true">></text>
+    </view>
+    <view class='item' catchtap='goOrder'>
+      <image src='../../assets/icon/myOrder.svg' class='item-image-card'></image>
+      <text class='item-text-title'>我的订单</text>
+      <text decode="true" class='item-text-direction'>></text>
+    </view>
+    <view class='item' catchtap='goAddress'>
+      <image src='../../assets/icon/myAddress.svg' class='item-image-card'></image>
+      <text class='item-text-title'>收获地址</text>
+      <text decode="true" class='item-text-direction'>></text>
+    </view>
+  </view>
+</view>
