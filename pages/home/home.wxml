@@ -7,8 +7,8 @@
   <view>
     <scroll-view scroll-x="true" style='width:90%; margin: auto;'>
       <view class='item-scroll'>
-        <view wx:for="{{tabs}}" wx:for-item="tab" data-city='{{tab}}' catchtap='itemSelect' class='item-tabs'>
-          {{tab}}
+        <view wx:for="{{tabs}}" wx:for-item="tab" data-index='{{index}}' catchtap='itemSelect' class='item-tabs' style='font-weight: {{ index !== isText ? normal : 900}}'>
+          <text>{{tab}}</text>
         </view>
       </view>
     </scroll-view>
@@ -27,8 +27,8 @@
             <text>{{item.name}}</text>
           </view>
           <view class='item-num'>
-            <view >
-              <image src='{{imgSrc}}' style='width:34rpx;height: 34rpx; margin-bottom: -8rpx'></image>
+            <view catchtap='fabulous' data-num='{{index}}'>
+              <image src='{{index === isFabulous ? imgSrc : noImgSrc }}' style='width:34rpx;height: 34rpx; margin-bottom: -8rpx'></image>
             </view>
             <view>
               <text>{{item.number}}</text>

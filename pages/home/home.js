@@ -5,11 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isText: 0,
+    // isFabulous: 0,
     tabs: ["推荐", "附近", "视频", "美食", "旅行", "男士穿搭", "健身", "影视", "读书", "明星", "时尚", "护肤", "家居", "音乐", "数码", "宠物", "萌娃", "母婴", "婚礼", "彩妆"],
     datas: {},
     dataLeft: [],
     dataRight: [],
-    imgSrc: '../../assets/icon/noclick.svg',
+    imgSrc: '../../assets/icon/click.svg',
+    noImgSrc: '../../assets/icon/noclick.svg',
     isBol: true,
     lists: [
       {
@@ -215,7 +218,8 @@ Page({
     let num = (Math.random() * 2).toFixed();
     this.getList(this.data.lists[num].data);
     this.setData({
-      datas: this.data.lists[num]
+      datas: this.data.lists[num],
+      isText: event.currentTarget.dataset.index
     });
   },
   getList: function (arr) {
@@ -403,17 +407,24 @@ Page({
       })
     });
   },
-  fabulous: function () {
-    if (this.data.isBol) {
-      this.setData({
-        isBol: false,
-        imgSrc: '../../assets/icon/click.svg',
-      })
-    } else {
-      this.setData({
-        isBol: true,
-        imgSrc: '../../assets/icon/noclick.svg',
-      })
-    }
+  fabulous: function (event) {
+    let isFabulous = event.currentTarget.dataset.num;
+    this.setData({
+      isFabulous: isFabulous
+    })
+    console.log('event', event.currentTarget.dataset.num)
+    // // console.log('num', this.data.datas);
+    // let arr = [];
+    // this.data.datas.data.forEach((val, index) => {
+    //   if (index == event.currentTarget.dataset.num) {
+    //     this.setData({
+    //       imgSrc: '../../assets/icon/click.svg',
+    //     })
+    //   } else {
+    //     this.setData({
+    //       imgSrc: '../../assets/icon/noclick.svg',
+    //     })
+    //   }
+    // })
   }
 })
