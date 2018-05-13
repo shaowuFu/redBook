@@ -21,6 +21,7 @@
 
     1. 使用flex布局实现瀑布流
     2. 使用flex-direction, flex-wrap 属性
+    3. 需必须设置高度！
 
 ## 我的界面
 
