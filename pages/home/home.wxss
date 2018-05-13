@@ -20,7 +20,7 @@
 
 .item-scroll {
   display: flex;
-  width: 352%;
+  width: 246%;
 }
 
 .item-left {
