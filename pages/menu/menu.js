@@ -367,7 +367,12 @@ Page({
                 }
               ]
             });
+            let imgAllHeight = 0;
+            that.data.lists[2].data.forEach(val => {
+              imgAllHeight += (val.imageHeight + 12 * 9);
+            })
             that.setData({
+              allHeight: imgAllHeight / 2 ,
               datas: that.data.lists[2]
             });
           },
