@@ -1,2 +1,17 @@
 <!--pages/menu/menu.wxml-->
-<text>pages/menu/menu.wxml</text>
+<view>
+  <view class='search-restaurant'>
+    <image src='../../assets/icon/search.svg' style='width: 50rpx;height: 50rpx;'></image>
+    <input type='text' confirm-type='search' placeholder="搜索小红书的笔记" placeholder-class="input-placeholder" style='font-size: 24rpx;' />
+  </view>
+  <view class='item-all' style='height: {{allHeight}}rpx'>
+    <view class='item-menu' wx:for="{{datas.data}}">
+      <view style='width: 350rpx'>
+        <image src='{{item.imgUrl}}' style='height: {{item.imageHeight}}rpx;width: 350rpx'></image>
+      </view>
+      <view>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

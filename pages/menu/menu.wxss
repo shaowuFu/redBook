@@ -1,1 +1,30 @@
 /* pages/menu/menu.wxss */
+
+.search-restaurant {
+  border: 1px solid blue;
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  display: flex;
+}
+
+.input-placeholder {
+  font-size: 24rpx;
+}
+
+.item-all {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 20rpx;
+}
+
+.item-menu {
+  display: flex;
+  width: 350rpx; 
+  margin: 10rpx;
+  flex-direction: column;
+  box-shadow: 0 0 20rpx;
+}

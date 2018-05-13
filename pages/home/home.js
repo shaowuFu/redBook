@@ -412,7 +412,7 @@ Page({
     this.setData({
       isFabulous: isFabulous
     })
-    console.log('event', event.currentTarget.dataset.num)
+    // console.log('event', event.currentTarget.dataset.num)
     // // console.log('num', this.data.datas);
     // let arr = [];
     // this.data.datas.data.forEach((val, index) => {

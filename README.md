@@ -16,6 +16,12 @@
     column-count:2;  // 设置多少列
     column-gap: 0   //  设置列间隔
 
+
+## 商城界面
+
+    1. 使用flex布局实现瀑布流
+    2. 使用flex-direction, flex-wrap 属性
+
 ## function
 
     1. tabBar!
@@ -23,4 +29,4 @@
     3. 点击♥ icon 可实现改变颜色！
     4. 实现瀑布流！
     5. 实现点击不同链接时会出现不同界面！
-
+    6. 点击商城可进入商城界面，使用flex 布局实现瀑布流！
