@@ -1,5 +1,7 @@
 # 微信小程序页面
 
+## [Todo] 新增 Getting Started
+
 ## 实现scroll-view 功能
     
     随意点击会随机出现不同的界面，总共有三个界面显示！
@@ -38,5 +40,4 @@
     6. 点击商城可进入商城界面，使用flex 布局实现瀑布流！
     7. 我的界面显示用户信息！
     8. 对于未实现功能使用showModel 进行提示！
-    
-## [Todo] Sharing Screenshot
+
